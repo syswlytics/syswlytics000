@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Syslytics — حلول تحليل بيانات وذكاء اصطناعي لنجاح أعمالك</title>
+<meta name="description" content="Syslytics تقدم حلول تحليل بيانات متقدمة، نظم مخصصة، وخدمات ذكاء اصطناعي لزيادة كفاءة الأعمال وخفض التكاليف. اطلب استشارة مجانية الآن." />
+<meta name="keywords" content="تحليل بيانات, ذكاء اصطناعي, لوحات معلومات, تكامل أنظمة, تحليلات الأعمال, استشارات بيانات" />
+<link rel="canonical" href="https://www.syslytics.com/" />
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Syslytics - تحليل البيانات وتطوير النظم" />
+<meta property="og:description" content="حلول تحليل بيانات احترافية ونماذج ذكاء اصطناعي لتسريع النمو وتحسين اتخاذ القرار." />
+<meta property="og:image" content="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg" />
+<meta property="og:url" content="https://www.syslytics.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="/favicon.ico" rel="icon" />
+
+<style>
+:root{
+  --primary: #0a3d62;
+  --accent: #f39c12;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:#0b1220;margin:0;line-height:1.7}
+a{color:inherit}
+nav{background:#fff;box-shadow:0 6px 18px rgba(11,78,215,0.06);position:sticky;top:0;z-index:60}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:56px;height:56px;border-radius:10px;object-fit:cover}
+.logo h3{margin:0;color:var(--primary);font-size:20px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;color:#0b1220}
+.nav-links a:hover{background:rgba(11,78,215,0.06);color:var(--primary)}
+.cta-small{background:var(--accent);color:#04243a;padding:10px 16px;border-radius:999px;font-weight:700;text-decoration:none}
+.hero{background-image:linear-gradient(120deg,rgba(4,18,32,0.6),rgba(11,78,215,0.45)),url('https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg');background-size:cover;background-position:center;padding:110px 0;color:#fff}
+.hero-grid{display:grid;grid-template-columns:1fr 460px;gap:40px;align-items:center}
+.hero h1{font-size:44px;margin:0 0 10px;font-weight:700}
+.hero p{font-size:18px;color:rgba(255,255,255,0.95);margin:0 0 20px}
+.hero .hero-ctas{display:flex;gap:14px}
+.btn-primary{background:var(--accent);color:#04243a;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none}
+.btn-outline{border:2px solid rgba(255,255,255,0.2);padding:12px 18px;border-radius:12px;color:#fff;text-decoration:none}
+.hero-card{background:rgba(255,255,255,0.06);padding:18px;border-radius:12px;backdrop-filter:blur(6px)}
+section{padding:70px 0}
+h2.section-title{font-size:30px;color:var(--primary);margin-bottom:18px;text-align:center}
+p.lead{max-width:900px;margin:0 auto 30px;color:var(--muted);text-align:center}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 8px 24px rgba(11,78,215,0.06);text-align:right;transition:transform .28s ease}
+.service-card:hover{transform:translateY(-8px)}
+.service-card h3{margin:12px 0 8px;color:#04243a}
+.service-card p{color:var(--muted);margin:0}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 12px 30px rgba(2,6,23,0.06);display:flex;flex-direction:column}
+.project img{width:100%;height:200px;object-fit:cover}
+.project .p-body{padding:18px}
+.project h4{margin:0 0 8px}
+.project p{color:var(--muted);font-size:14px}
+.testimonials{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.testimonial{background:linear-gradient(180deg,#fff,#f8fbff);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.04)}
+.testimonial p{color:#14314f}
+.testimonial .meta{margin-top:12px;color:var(--muted);font-size:13px}
+.clients{display:flex;flex-wrap:wrap;gap:26px;justify-content:center;align-items:center}
+.clients img{max-width:140px;filter:grayscale(1) contrast(.9);opacity:.8}
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:30px}
+.contact-card{background:var(--card);padding:26px;border-radius:12px;box-shadow:0 8px 24px rgba(2,6,23,0.04)}
+.contact-card h3{margin-top:0}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{margin-bottom:12px;color:var(--muted)}
+.socials{display:flex;gap:14px;margin-top:12px}
+.socials a{width:44px;height:44px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:#f2f6fb}
+footer{background:linear-gradient(90deg,var(--primary),#072b8a);color:#fff;padding:40px 0;margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.footer-grid a{color:rgba(255,255,255,0.9);text-decoration:none}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr} .services-grid{grid-template-columns:repeat(2,1fr)} .projects-grid{grid-template-columns:repeat(2,1fr)} .contact-grid{grid-template-columns:1fr} .footer-grid{grid-template-columns:1fr}} 
+@media(max-width:640px){.services-grid{grid-template-columns:1fr} .projects-grid{grid-template-columns:1fr}}
+.reveal{opacity:0;transform:translateY(18px);transition:all .7s cubic-bezier(.2,.9,.3,1)}
+.reveal.active{opacity:1;transform:none}
+.btn-primary:hover, .btn-outline:hover {transform: scale(1.05); transition: transform 0.3s ease;}
+.service-card, .project, .testimonial {transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.service-card:hover, .project:hover, .testimonial:hover {transform: translateY(-6px); box-shadow:0 10px 20px rgba(0,0,0,0.12);}
+#backToTop.show {display:block;animation:fadeIn 0.4s ease;}
+@keyframes fadeIn {from{opacity:0} to{opacity:1}}
+</style>
+<style>
+    .fade-in{opacity:0;transform:scale(.98);transition:opacity .6s ease, transform .6s ease}
+    .fade-in.visible{opacity:1;transform:none}
+    </style>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+      const imgs = document.querySelectorAll('img');
+      const obs = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible'); obs.unobserve(e.target)}})},{threshold:0.12});
+      imgs.forEach(i=>{i.classList.add('fade-in'); obs.observe(i)});
+    });
+    </script>
+
+<style>
+/* زر القائمة للموبايل */
+.menu-toggle {
+  display: none;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .nav-links a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+</style>
+
+</head>
+<body>
+<nav aria-label="القائمة الرئيسية">
+<div class="container nav-inner">
+<div class="logo">
+<img alt="شعار Syslytics" loading="lazy" src="https://i.postimg.cc/sX30BRYD/FB-IMG-1754720939988.jpg" onerror="this.src='https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg'"/>
+<h3>Syslytics</h3>
+</div>
+<button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰ القائمة</button>
+<div class="nav-links" role="navigation">
+<a href="#about">عن الشركة</a>
+<a href="#services">خدماتنا</a>
+<a href="#projects">مشاريعنا</a>
+<a href="#clients">عملاؤنا</a>
+<a href="#contact">تواصل</a>
+<a class="cta-small" href="#contact">اطلب عرض سعر</a>
+</div>
+</div>
+</nav>
+<header class="hero">
+<div class="container hero-grid">
+<div>
+<h1>نتحوّل ببياناتك إلى ميزة تنافسية قابلة للقياس</h1>
+<p>نقدم نظم تحليل بيانات ولوحات تحكم تفاعلية، ونماذج ذكاء اصطناعي مصممة لزيادة المبيعات، تقليل الهدر، وتسريع اتخاذ القرار.</p>
+<div class="hero-ctas">
+<a class="btn-primary" href="#contact">اطلب عرض سعر</a>
+<a class="btn-outline" href="#projects">عرض المشاريع</a>
+</div>
+<div style="margin-top:22px;color:rgba(255,255,255,0.95);font-weight:600">تواصل معنا الآن: <a href="tel:01066427012" style="color:#fff;text-decoration:underline">+20 106 642 7012</a></div>
+</div>
+<aside aria-labelledby="hero-solutions" class="hero-card reveal">
+<h4 id="hero-solutions" style="margin:0 0 10px">حلولنا المتكاملة</h4>
+<p style="margin:0 0 10px;color:rgba(255,255,255,0.95)">من تحضير البيانات إلى نشر نماذج تعلم الآلة واللوحات التفاعلية — حلول قابلة للتنفيذ بسرعة وبتكاليف واضحة.</p>
+<ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.95)">
+<li>• لوحات تحكم تفاعلية لقيادة الأداء</li>
+<li>• نماذج تنبؤية لتحسين المخزون والمبيعات</li>
+<li>• أتمتة التقارير والتكامل مع أنظمةك الحالية</li>
+</ul>
+</aside>
+</div>
+</header>
+<main class="container">
+<section id="about">
+<h2 class="section-title">عن Syslytics</h2>
+<p class="lead">Syslytics هي شركة تقنية متخصصة في تحويل البيانات إلى قرارات أعمال قابلة للتنفيذ. نعمل مع الشركات لتصميم حلول مخصصة تجمع بين تحليلات قوية وتجربة مستخدم بسيطة لضمان قبول الحل داخل المؤسسة وسرعة تحقيق العائد على الاستثمار.</p>
+<div class="about-content reveal" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+<img alt="مكتب وبيئة عمل Syslytics" loading="lazy" src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg" style="max-width:560px;width:100%;border-radius:12px;"/>
+<div class="about-text">
+<p>فريقنا يجمع بين محللي بيانات، مهندسي نظم، ومهندسي ذكاء اصطناعي ذوي خبرة في التجارة الإلكترونية، سلاسل الإمداد، والخدمات المالية. نحدد أولويات الأعمال ثم نبني الحل التقني الذي يحققها.</p>
+<p style="margin-top:12px;color:var(--muted)">نركز على القابلية للتوسع، الأمن، وسهولة التكامل مع بنيتك التحتية الحالية.</p>
+<p style="text-align:left;margin-top:18px"><a class="btn-primary" href="#contact">ابدأ مشروعك معنا الآن</a></p>
+</div>
+</div>
+</section>
+<section id="team">
+  <h2 class="section-title">فريق العمل</h2>
+  <p class="lead">فريقنا يجمع بين الخبرة التقنية والإبداع لتحقيق أفضل النتائج لعملائنا.</p>
+  <div class="services-grid">
+    
+    <div class="service-card reveal" style="text-align:center">
+      <img src="https://i.postimg.cc/285RcnB8/Picsart-25-07-11-14-36-37-084.jpg" 
+           alt="أشرف شريف" 
+           style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px">
+      <h3>أشرف شريف</h3>
+      <p>المؤسس والمدير التنفيذي</p>
+    </div>
+
+    <div class="service-card reveal" style="text-align:center">
+      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" 
+           alt="محمد علي" 
+           style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px">
+      <h3>محمد علي</h3>
+      <p>مدير تطوير النظم</p>
+    </div>
+
+    <div class="service-card reveal" style="text-align:center">
+      <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" 
+           alt="سارة أحمد" 
+           style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px">
+      <h3>سارة أحمد</h3>
+      <p>محللة بيانات</p>
+    </div>
+
+    <div class="service-card reveal" style="text-align:center">
+      <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg" 
+           alt="خالد مصطفى" 
+           style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px">
+      <h3>خالد مصطفى</h3>
+      <p>مهندس ذكاء اصطناعي</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+<h2 class="section-title">خدماتنا</h2>
+<p class="lead">خدمات شاملة من الاستراتيجية إلى التنفيذ والتشغيل.</p>
+<div class="services-grid">
+<div class="service-card reveal">
+<h3>استراتيجية البيانات</h3>
+<p>نساعدك على وضع خارطة طريق لبياناتك: حوكمة، جودة البيانات، وبنية تحليلات قابلة للتوسع.</p>
+</div>
+<div class="service-card reveal">
+<h3>تحليل البيانات ولوحات المعلومات</h3>
+<p>لوحات تحكم قابلة للتخصيص تعرض مؤشرات الأداء الرئيسية بطريقة تفاعلية وسهلة الفهم.</p>
+</div>
+<div class="service-card reveal">
+<h3>نماذج ذكاء اصطناعي</h3>
+<p>نماذج تعلم آلي مهيأة خصيصًا لحل مشكلة عملك — تنبؤ، تصنيف، وتحسين القرارات التشغيلية.</p>
+</div>
+<div class="service-card reveal">
+<h3>تكامل الأنظمة والـ ETL</h3>
+<p>دمج مصادر البيانات المتعددة وإنشاء قواعد بيانات تحليلية موثوقة لتغذية التحليلات والنماذج.</p>
+</div>
+<div class="service-card reveal">
+<h3>تطوير نظم مخصصة</h3>
+<p>بناء واجهات وبرمجيات داخلية (dashboards, APIs) متوافقة مع معايير الأمان والأداء.</p>
+</div>
+<div class="service-card reveal">
+<h3>دعم وتشغيل</h3>
+<p>خدمات تشغيلية مستمرة، صيانة نماذج، ومقاييس أداء لضمان استمرار النتائج على المدى الطويل.</p>
+</div>
+</div>
+<p style="text-align:center;margin-top:24px"><a class="btn-primary" href="#contact">اطلب استشارة مجانية</a></p>
+</section>
+<section id="projects">
+<h2 class="section-title">نماذج من أعمالنا</h2>
+<p class="lead">دراسات حالة مختصرة تُظهر أثر حلولنا على أعمال العملاء.</p>
+<div class="projects-grid">
+<div class="project reveal">
+<img alt="لوحة تحكم تحليل بيانات" loading="lazy" src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg"/>
+<div class="p-body">
+<h4>لوحة تحكم لقطاع التجزئة</h4>
+<p>تصميم ونشر نظام متابعة مبيعات ومخزون في الوقت الحقيقي، مع تقارير يومية تقلّل الفاقد وتزيد تسليم المنتجات.</p>
+</div>
+</div>
+<div class="project reveal">
+<img alt="نظام ذكاء اصطناعي للتنبؤ" loading="lazy" src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"/>
+<div class="p-body">
+<h4>نظام تنبؤ طلبات</h4>
+<p>نموذج تنبؤي لمتجر إلكتروني ساعد في تحسين خطة الشراء وتقليل نفاذ المخزون بنسبة ملحوظة.</p>
+</div>
+</div>
+<div class="project reveal">
+<img alt="تكامل أنظمة" loading="lazy" src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg"/>
+<div class="p-body">
+<h4>تكامل أنظمة لشركة لوجستية</h4>
+<p>ربط نظام التتبع بقاعدة بيانات تحليلية لتقديم مؤشرات أداء آنية وتحسين توقيت الشحنات.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="testimonials">
+<h2 class="section-title">آراء العملاء</h2>
+<p class="lead">عملاؤنا يشاركون نتائجهم بعد تطبيق الحلول.</p>
+<div class="testimonials">
+<div class="testimonial reveal">
+<p>"الشراكة مع Syslytics حسّنت من جودة بياناتنا وقللت من الوقت اللازم لاتخاذ القرار."</p>
+<div class="meta">— محمد السنوري، مدير تقنية المعلومات</div>
+</div>
+<div class="testimonial reveal">
+<p>"نموذج التنبؤ ساعدنا في تقليل نفاد المخزون وزيادة نسبة الوفرة بالمنتجات الأساسية."</p>
+<div class="meta">— ندى خالد، مديرة سلسلة الإمداد</div>
+</div>
+</div>
+</section>
+<section id="clients">
+<h2 class="section-title">عملاؤنا وشركاء النجاح</h2>
+<p class="lead">نعمل مع شركات في قطاعات التجزئة، التصنيع، والخدمات المالية.</p>
+<div class="clients reveal">
+<!-- استبدل هذه الصور بشعارات عملائكم الحقيقية عند توفرها -->
+<img alt="شعار عميل 1" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"/>
+<img alt="شعار عميل 2" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"/>
+<img alt="شعار عميل 3" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"/>
+</div>
+</section>
+<section id="contact">
+<h2 class="section-title">تواصل معنا</h2>
+<p class="lead">للاستفسارات وطلبات العروض املأ النموذج أو اتصل بنا مباشرة وسنعاود التواصل خلال يومي عمل.</p>
+<div class="contact-grid">
+<div aria-labelledby="contact-info" class="contact-card reveal">
+<h3 id="contact-info">معلومات الاتصال</h3>
+<ul class="contact-list">
+<li>📍 العنوان: مصر، الدقهلية، المنصورة الجديدة</li>
+<li>📞 الهاتف: <a href="tel:01066427012">+20 106 642 7012</a></li>
+<li>✉️ البريد: <a href="mailto:info@syslytics.com">info@syslytics.com</a></li>
+</ul>
+<div class="socials">
+<a aria-label="فيسبوك" href="#">فيسبوك</a>
+<a aria-label="لينكيدإن" href="#">لينكيدإن</a>
+<a aria-label="تويتر" href="#">تويتر</a>
+</div>
+<div style="margin-top:14px">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13792.08091989152!2d31.5400!3d31.0500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7b4f6c0d2a6df%3A0x6db1a3d9f1b7e9d1!2z2YXYr9mK2YbYqSDYp9mE2KfZgdiq2YrZhtmK2Kkg2YXYr9mK2YbYqQ!5e0!3m2!1sar!2seg!4v1691849476685!5m2!1sar!2seg"
+width="100%" height="200" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+<div aria-labelledby="contact-form" class="contact-card reveal">
+<h3 id="contact-form">أرسل لنا سؤالاً</h3>
+<!-- تم إعداد الفورم لFormspree مع معرّف تجريبي — استبدل بالمعرّف الفعلي أو endpoint الخاص بك -->
+<form action="https://formspree.io/f/your_form_id" method="POST" style="display:flex;flex-direction:column;gap:12px">
+<label class="sr-only" for="name">الاسم</label>
+<input id="name" name="name" placeholder="الاسم" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8" type="text"/>
+<label class="sr-only" for="email">البريد الإلكتروني</label>
+<input id="email" name="email" placeholder="البريد الإلكتروني" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8" type="email"/>
+<label class="sr-only" for="message">وصف المشروع</label>
+<textarea id="message" name="message" placeholder="وصف مختصر للمشروع" rows="5" style="padding:10px;border-radius:8px;border:1px solid #e6eef8"></textarea>
+<!-- Honeypot to reduce spam -->
+<input name="_gotcha" style="display:none" type="text"/>
+<!-- reCAPTCHA placeholder — ضع مفتاح الموقع الفعلي هنا -->
+<div class="g-recaptcha" data-sitekey="your_real_recaptcha_site_key"></div>
+<button class="btn-primary" type="submit">أرسل</button>
+</form>
+<p style="font-size:13px;color:var(--muted);margin-top:10px">سنحترم خصوصيتك — لن نشارك معلوماتك مع طرف ثالث. اقرأ <a href="#privacy">سياسة الخصوصية</a>.</p>
+</div>
+</div>
+</section>
+
+<!-- صفحات سياسة الخصوصية والشروط مضمّنة في نفس الملف لتسهيل التجربة (يمكن استخراجها كملفات مستقلة لاحقًا) -->
+<section id="privacy" style="padding:40px 0;background:#fff;border-top:1px solid #eef3fb;margin-top:40px">
+<div class="container">
+<h2 class="section-title">سياسة الخصوصية</h2>
+<p class="lead">نحن نأخذ خصوصيتك على محمل الجد. توضح هذه السياسة كيف نجمع، نستخدم، ونحافظ على معلوماتك الشخصية.</p>
+<h3>المعلومات التي نجمعها</h3>
+<ul>
+<li>البيانات التي تقدمها لنا مباشرة (مثل الاسم، البريد الإلكتروني، ورسائل النموذج).</li>
+<li>بيانات الاستخدام (مثل صفحات الزيارة، زمن الجلسة، ومعلومات الجهاز) لجعل الخدمات أفضل.</li>
+</ul>
+<h3>كيفية الاستخدام</h3>
+<ul>
+<li>للرد على استفساراتك وتقديم الخدمات المطلوبة.</li>
+<li>لتحسين منتجاتنا وخدماتنا وتجربة المستخدم.</li>
+<li>لأغراض أمنية ومنع إساءة الاستخدام.</li>
+</ul>
+<h3>مشاركة المعلومات</h3>
+<p>لن نشارك معلوماتك الشخصية مع أطراف ثالثة بدون موافقتك، إلا عندما يتطلب القانون ذلك أو لتقديم الخدمات عبر شركائنا المرخصين.</p>
+<h3>حقوقك</h3>
+<p>يمكنك طلب الوصول إلى بياناتك، تصحيحها أو حذفها عبر مراسلتنا على info@syslytics.com.</p>
+<p style="margin-top:12px;color:var(--muted)">آخر تحديث: ١ أغسطس ٢٠٢٥</p>
+</div>
+</section>
+
+<section id="terms" style="padding:40px 0;background:#f7fbff;border-top:1px solid #eef3fb;margin-top:20px">
+<div class="container">
+<h2 class="section-title">الشروط والأحكام</h2>
+<p class="lead">استخدام هذا الموقع يخضع للشروط والأحكام التالية. يرجى قراءتها بعناية.</p>
+<h3>النطاق</h3>
+<p>توفر Syslytics محتوى وخدمات معلوماتية تساعد العملاء في مجال تحليل البيانات والذكاء الاصطناعي. أي اتفاق خدمات منفصل يتم وضع شروطه في عقد منفصل.</p>
+<h3>الاستخدام المقبول</h3>
+<p>لا يجوز استخدام الموقع لأغراض غير قانونية أو لإساءة استخدام الخدمات. نحتفظ بالحق في تقييد الوصول في حالة خرق الشروط.</p>
+<h3>حقوق الملكية الفكرية</h3>
+<p>جميع المحتويات النصية والمرئية على هذا الموقع مملوكة لـ Syslytics أو مرخصة لها. لا يجوز نسخ المحتوى دون إذن خطي.</p>
+<h3>إخلاء المسؤولية</h3>
+<p>المعلومات المقدمة على الموقع هي لأغراض معلوماتية وليست استشارة مهنية محددة. لا نتحمل مسؤولية القرارات المتخذة اعتمادًا على المحتوى دون عقد خدمات واضح.</p>
+<p style="margin-top:12px;color:var(--muted)">آخر تحديث: ١ أغسطس ٢٠٢٥</p>
+</div>
+</section>
+
+</main>
+<footer>
+<div class="container footer-grid">
+<div>
+<img alt="شعار Syslytics" loading="lazy" src="https://i.postimg.cc/sX30BRYD/FB-IMG-1754720939988.jpg" style="width:100px;height:auto" onerror="this.style.display='none'"/>
+<p style="color:rgba(255,255,255,0.85);margin:0 0 8px">شريكك في حلول البيانات والذكاء الاصطناعي.</p>
+<p style="color:rgba(255,255,255,0.85);margin:0">📞 <a href="tel:01066427012" style="color:inherit;text-decoration:underline">+20 106 642 7012</a></p>
+</div>
+<div>
+<h4 style="color:#fff;margin:0 0 12px">روابط سريعة</h4>
+<a href="#services">خدماتنا</a><br/>
+<a href="#projects">مشاريع</a><br/>
+<a href="#contact">اتصل بنا</a>
+</div>
+<div>
+<h4 style="color:#fff;margin:0 0 12px">تابعنا</h4>
+<div style="display:flex;gap:12px;align-items:center">
+<a aria-label="فيسبوك" href="#" style="display:inline-block;background:#fff;padding:8px;border-radius:8px"><img alt="facebook" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Facebook_Logo_(2019).png" style="width:28px;height:28px"/></a>
+<a aria-label="linkedin" href="#" style="display:inline-block;background:#fff;padding:8px;border-radius:8px"><img alt="linkedin" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="width:28px;height:28px"/></a>
+<a aria-label="twitter" href="#" style="display:inline-block;background:#fff;padding:8px;border-radius:8px"><img alt="twitter" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg" style="width:28px;height:28px"/></a>
+</div>
+<div style="margin-top:12px;font-size:13px;color:rgba(255,255,255,0.9)">
+<a href="#privacy" style="color:rgba(255,255,255,0.9);text-decoration:underline">سياسة الخصوصية</a> • <a href="#terms" style="color:rgba(255,255,255,0.9);text-decoration:underline">الشروط والأحكام</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Syslytics",
+  "url": "https://www.syslytics.com/",
+  "logo": "https://www.syslytics.com/images/logo-syslytics.webp",
+  "sameAs": [
+    "https://www.facebook.com/yourpage",
+    "https://www.linkedin.com/company/yourcompany",
+    "https://twitter.com/yourcompany"
+  ]
+}
+</script>
+
+<script>
+// simple reveal on scroll (deferred and lightweight)
+document.addEventListener('DOMContentLoaded',function(){
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('active')}})
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+});
+
+// back to top button
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('backToTop');
+    if (!btn) return;
+    if (window.scrollY > 400) {
+        btn.classList.add('show');
+    } else {
+        btn.classList.remove('show');
+    }
+});
+
+document.addEventListener('click', function(e){
+  if(e.target && e.target.matches('a[href^="#"]')){
+    const href = e.target.getAttribute('href');
+    if(href.length>1){
+      const target = document.querySelector(href);
+      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+    }
+  }
+});
+</script>
+
+<!-- Analytics & Performance (placeholders) -->
+<!--
+<script>
+  // إضافة Google Analytics أو أي أداة تحليلية هنا. استبدل "GA_MEASUREMENT_ID" بالمعرف الحقيقي.
+</script>
+-->
+
+<script async defer src="https://www.google.com/recaptcha/api.js"></script>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/01066427012" style="position:fixed;bottom:20px;left:20px;background:#25D366;color:#fff;padding:12px 16px;border-radius:50px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,0.2);z-index:999;text-decoration:none;font-weight:bold"><span>💬</span><span>واتساب</span></a>
+<button id="backToTop" style="display:none;position:fixed;bottom:20px;right:20px;background:var(--primary);color:#fff;border:none;padding:12px 16px;border-radius:50px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.2);z-index:999">↑</button>
+</body>
+</html>
